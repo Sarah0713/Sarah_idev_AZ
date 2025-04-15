@@ -1,55 +1,193 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gloss Franciny Ehlke</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Franciny Ehlke - Gloss Collection</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff66a3;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .about img {
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #d63384;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            color: #ff66a3;
+            margin: 10px 0 5px;
+        }
+
+        .product p {
+            font-size: 0.95rem;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #d63384;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #ffe0ec;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-        <div class="container">
-            <h1>Gloss Franciny Ehlke</h1>
-            <nav>
-                <ul>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Franciny Ehlke</h1>
+        <p>Conheça a nova coleção de glosses da Fran ✨</p>
     </header>
 
-    <section id="produtos">
-        <div class="container">
-            <h2>Nosso Gloss</h2>
-            <div class="produtos">
-                <div class="produto">
-                    <img src="gloss1.jpg" alt="Gloss Franciny Ehlke 1">
-                    <h3>Gloss 1</h3>
-                    <p>Brilho intenso e duradouro. Ideal para qualquer ocasião.</p>
-                    <p class="preco">R$ 39,90</p>
-                </div>
-                <div class="produto">
-                    <img src="gloss2.jpg" alt="Gloss Franciny Ehlke 2">
-                    <h3>Gloss 2</h3>
-                    <p>Com efeito de volume e hidratação, para lábios irresistíveis.</p>
-                    <p class="preco">R$ 44,90</p>
-                </div>
-                <div class="produto">
-                    <img src="gloss3.jpg" alt="Gloss Franciny Ehlke 3">
-                    <h3>Gloss 3</h3>
-                    <p>Gloss transparente com brilho luminoso.</p>
-                    <p class="preco">R$ 29,90</p>
-                </div>
+    <div class="container">
+        <section class="about">
+            <img src="https://io.convertiez.com.br/m/novaeracosmeticos/shop/products/images/38175/medium/batom-fran-by-franciny-ehlke-stick-tint-balm-pink-21942_21315.jpg"
+                alt="Franciny Ehlke">
+            <div class="about-text">
+                <p>
+                    Franciny Ehlke é uma das maiores influenciadoras digitais do Brasil. Além de produzir conteúdo sobre
+                    moda e beleza, ela lançou sua própria linha de maquiagem — com destaque para seus famosos glosses,
+                    que combinam brilho, conforto e estilo.
+                </p>
+                <p>
+                    A linha de glosses da Franciny traz tons incríveis, textura suave e uma fórmula que hidrata os
+                    lábios enquanto dá aquele toque glamouroso que a gente ama!
+                </p>
+                <h1>Gloss Franciny Ehlke</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </section>
+
+        <h2>💄 Glosses da Franciny</h2>
+        <section class="products">
+            <div class="product">
+                <img src="https://cdn.iset.io/assets/70914/produtos/162/5470fdfb8957e84b989500ff1696985c672231568a3ac.png"
+                    alt="GLOSS AUMENTO VOLUME LÁBIOS FRAN BY FRANCINY EHLKE LIPCHILLI">
+                <h3>GLOSS AUMENTO VOLUME LÁBIOS FRAN BY FRANCINY EHLKE LIPCHILLI</h3>
+                <div class="price">R$ 49,90</div>
+            </div>
+            <div class="product">
+                <img src="https://cdn.iset.io/assets/70914/produtos/163/add7cbffb36e253fa0f81d6e6c522b986722315aa7e3b.png"
+                    alt="Gloss Brilhante">
+                <h3>GLOSS FRAN BY FRANCINY EHLKE GLOSSIP GOLD</h3>
+                <div class="price">R$ 45,90</div>
+            </div>
+            <div class="product">
+                <img src="https://cdn.iset.io/assets/70914/produtos/199/medida-ecomm-fran-kit-glosslicious-prancheta-1-01.jpg"
+                    alt="Gloss Nude Chic">
+                <h3>KIT FRAN GLOSSLICIOUS BY FRANCINY EHLKE</h3>
+                <div class="price">R$ 109,90</div>
+            </div>
+            <div class="product">
+                <img src="https://cdn.iset.io/assets/70914/produtos/204/lip-honey-fran-by-fr-01.jpg"
+                    alt="GLOSS AUMENTO VOLUME LÁBIOS FRAN BY FRANCINY EHLKE LIPCHILLI">
+                <h3>GLOSS FRAN BY FRANCINY EHLKE LIPHONEY</h3>
+                <div class="price">R$ 69,90</div>
+            </div>
+        </section>
+    </div>
     </section>
 
     <section id="sobre">
         <div class="container">
             <h2>Sobre Franciny Ehlke</h2>
-            <p>Franciny Ehlke é uma influenciadora digital e empresária, com uma linha de cosméticos focada em brilho e cuidados para os lábios. Seus glosses são a escolha perfeita para quem busca um toque de elegância e hidratação.</p>
+            <p>A marca Fran By FR, criada por Franciny Ehlke, tem conquistado espaço no universo da beleza com produtos
+                inovadores e de alta qualidade.Os gloss labiais, como o famoso Lipchilli, são queridinhos dos fãs por
+                oferecer hidratação e um efeito de volume instantâneo. Além da maquiagem, a marca também investe em
+                cuidados com a pele, trazendo produtos como sérum, sabonete detox e cleansing oil para preparar e manter
+                a pele saudável. Todos os itens são cruelty-free e veganos, reforçando o compromisso com a
+                sustentabilidade e o respeito aos animais. Franciny Ehlke segue surpreendendo seus seguidores, sempre
+                trazendo novidades e tendências para quem ama o universo da beleza.</p>
         </div>
     </section>
 
@@ -60,13 +198,13 @@
             <form>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
-                
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                
+
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" required></textarea>
-                
+
                 <button type="submit">Enviar</button>
             </form>
         </div>
@@ -78,4 +216,5 @@
         </div>
     </footer>
 </body>
+
 </html>
